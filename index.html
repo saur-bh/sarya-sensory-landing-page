@@ -1,25 +1,82 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Saras Sensory Store Pvt Ltd - Empowering Children with Special Needs</title>
-    <meta name="description" content="Saras Sensory Store is dedicated to empowering children with special needs through sensory products and digital solutions. Discover our Sarya ADL App for life skills training." />
-    <meta name="author" content="Saras Sensory Store Pvt Ltd" />
-
-    <meta property="og:title" content="Saras Sensory Store Pvt Ltd - Empowering Children with Special Needs" />
-    <meta property="og:description" content="Saras Sensory Store is dedicated to empowering children with special needs through sensory products and digital solutions. Discover our Sarya ADL App for life skills training." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.sarassensory.co.in" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Saras Sensory Store Pvt Ltd" />
-    <meta name="twitter:description" content="Empowering children with special needs through sensory products and digital solutions." />
+    <title>Welcome to Saras Sensory Store Pvt Ltd</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" href="/public/favicon.ico" type="image/x-icon">
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 flex flex-col items-center justify-center px-4 py-8">
+      <div class="max-w-3xl mx-auto text-center space-y-8">
+        <!-- Logo -->
+        <img 
+          src="/public/uploads/cb010c0f-1c65-4673-bf7d-f3ea3609ac90.png"
+          alt="Saras Sensory Store Logo"
+          class="w-24 h-24 mx-auto rounded-full shadow-lg"
+        />
+
+        <!-- Title -->
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800">
+          Welcome to Saras Sensory Store Pvt Ltd
+        </h1>
+
+        <!-- Main Content -->
+        <div class="space-y-6">
+          <!-- About Us -->
+          <div class="bg-white/80 backdrop-blur-sm rounded-xl p-8 shadow-lg">
+            <p class="text-lg text-gray-700 leading-relaxed">
+              Saras Sensory Store Pvt Ltd is committed to empowering children with special needs through high-quality sensory products, toys, and educational aids for children with Autism, ADHD, and other neurodiverse needs. We develop and supply tools that help families, therapists, and educators promote learning, self-regulation, and life skills.
+            </p>
+          </div>
+
+          <!-- New Venture -->
+          <div class="bg-white/80 backdrop-blur-sm rounded-xl p-8 shadow-lg">
+            <p class="text-lg text-gray-700 leading-relaxed">
+              Expanding on our mission, we are proud to introduce our latest digital initiative — the Sarya ADL App (Activities of Daily Living), an interactive life skills training app designed specifically for Indian families. Sarya supports children in building daily routines and independence through culturally familiar, age-appropriate, and engaging activities.
+            </p>
+          </div>
+        </div>
+
+        <!-- Redirect Section -->
+        <div class="bg-blue-50/80 backdrop-blur-sm rounded-xl p-8 shadow-lg max-w-md mx-auto border border-blue-100">
+          <p class="text-gray-600 mb-6">
+            Redirecting to Sarya in <span id="countdown" class="font-bold text-blue-600">5</span> seconds...
+          </p>
+          <a
+            href="https://thesarya.com"
+            class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-all hover:shadow-lg w-full text-center"
+          >
+            Visit Sarya Now →
+          </a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="pt-12 pb-6 text-gray-500 text-sm">
+          © 2025 Saras Sensory Store Pvt Ltd. All rights reserved.
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      let countdown = 5;
+      const countdownElement = document.getElementById('countdown');
+      
+      const timer = setInterval(() => {
+        countdown--;
+        if (countdown <= 0) {
+          clearInterval(timer);
+          window.location.href = 'https://thesarya.com';
+        } else {
+          countdownElement.textContent = countdown;
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
+
+    <script src="script.js"></script>
   </body>
 </html>
