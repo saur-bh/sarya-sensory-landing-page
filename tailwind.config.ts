@@ -1,3 +1,5 @@
+// Not used for CDN Tailwind setup. You can remove this file if not using a build process.
+
 import type { Config } from "tailwindcss";
 
 export default {

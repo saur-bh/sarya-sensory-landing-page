@@ -1,32 +1,23 @@
 # Saras Sensory Store Landing Page
 
-A simple landing page for Saras Sensory Store, built with HTML, CSS, and vanilla JavaScript.
+A simple, responsive landing page for Saras Sensory Store Pvt Ltd.
 
 ## Features
 
-- Responsive design using Tailwind CSS
-- Countdown timer with auto-redirect
-- Modern UI with smooth transitions
-- Lucide icons for visual elements
+- Modern, accessible, and mobile-friendly design using Tailwind CSS
+- Countdown timer with auto-redirect to Sarya ADL App
+- Manual visit option and timer stop for user control
+- Clean, professional, and friendly UI
 
-## Setup
+## Usage
 
-1. Clone the repository
-2. Open `index.html` in your browser
-
-That's it! No build process or dependencies required.
+Just open `index.html` in your browser. No build or dependencies required.
 
 ## Structure
 
-- `index.html` - Main HTML file
-- `styles.css` - Custom CSS styles
-- `script.js` - JavaScript functionality
-- `public/uploads/` - Image assets
+- `index.html` — Main HTML file (uses Tailwind CDN)
+- `public/uploads/` — Logo and image assets
 
-## Technologies Used
+## License
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- Tailwind CSS (via CDN)
-- Lucide Icons (via CDN)
+© 2025 Saras Sensory Store Pvt Ltd. All rights reserved.

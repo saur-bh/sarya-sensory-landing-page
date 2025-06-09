@@ -43,4 +43,6 @@ function stopTimer() {
 }
 
 // Start timer when page loads
-document.addEventListener('DOMContentLoaded', startTimer); 
+document.addEventListener('DOMContentLoaded', startTimer);
+
+// (No custom JS needed for this static landing page. All logic is in index.html)
